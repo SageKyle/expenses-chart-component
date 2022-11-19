@@ -1,0 +1,22 @@
+// Base settings
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// fix collapsing margins
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
