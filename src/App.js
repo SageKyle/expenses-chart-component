@@ -1,7 +1,7 @@
 import './App.scss';
 
-import { Balance } from './components/Balance';
 import { Charts } from './components/Charts';
+import { Balance } from './utils/Balance';
 
 function App() {
 	const balance = 924.18;

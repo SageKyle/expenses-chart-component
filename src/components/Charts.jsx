@@ -1,10 +1,19 @@
 // styles
 import './Charts.scss';
 
+import Data from '../db/data.json';
+import { SingleChart } from '../utils/SingleChart';
+
 export const Charts = () => {
 	return (
-		<div className="chart">
-			<h3>This is the main chart container</h3>
+		<div className="charts">
+			{Data.map((chart) => (
+				// <div className="chartitem" key={chart.day}>
+				// 	<h4>{chart.day}</h4>
+				// 	<p>{chart.amount}</p>
+				// </div>
+				<SingleChart key={chart.day} amount={chart.amount} day={chart.day} />
+			))}
 		</div>
 	);
 };

@@ -16,14 +16,12 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-// fix collapsing margins
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
+// general reset
+*,
+*::before,
+*::after {
 	margin: 0;
+	box-sizing: border-box;
 }
 
 // variables/colors
