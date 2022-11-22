@@ -1,14 +1,20 @@
 @import '../index.scss';
 
 .charts {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: flex-end;
 	padding: 2rem;
 	background-color: #fff;
 	border-radius: 2rem;
 	box-shadow: 2px 2px 0.5rem rgb(200, 170, 95);
 
+	// bar chart container
+	&__container {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-evenly;
+		border-bottom: 1px solid $cream;
+		padding: 2rem 0;
+	}
+	// individual chart item
 	&__expense {
 		width: 3rem;
 
@@ -16,9 +22,47 @@
 			margin-right: 1rem;
 		}
 
+		// bar chart item
 		&--amount {
-			background-color: $soft-red;
+			border-radius: 0.25rem;
 			margin-bottom: 2rem;
+		}
+	}
+
+	// chart summary
+	&__total {
+		padding: 2rem 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		// chart total amount
+		&--expense {
+			font-size: 2rem;
+			font-weight: 700;
+			padding-top: 0.5rem;
+		}
+
+		// percentage difference
+		&--saving {
+			text-align: right;
+			margin-top: auto;
+		}
+
+		// difference figure
+		&--difference {
+			font-size: 1.8rem;
+		}
+	}
+
+	// summary info
+	&__info {
+		font-size: 1.5rem;
+		font-weight: 400;
+		color: $medium-brown;
+
+		&:not(:last-child) {
+			padding-bottom: 1rem;
 		}
 	}
 }
