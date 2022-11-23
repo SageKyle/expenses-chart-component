@@ -65,4 +65,12 @@
 			padding-bottom: 1rem;
 		}
 	}
+
+	// media queries
+
+	@media screen and (min-width: 44em) {
+		min-width: 45rem;
+		max-width: 45%;
+		margin-inline: auto;
+	}
 }
