@@ -7,9 +7,13 @@ export const SingleChart = ({ amount, day }) => {
 	};
 
 	return (
-		<div className="charts__expense">
+		<div className={'charts__expense'}>
 			<div
-				className="charts__expense--amount"
+				className={`${
+					day === 'wed'
+						? 'charts__expense--amount active'
+						: 'charts__expense--amount'
+				}`}
 				title={amount}
 				style={style.expense}
 			></div>

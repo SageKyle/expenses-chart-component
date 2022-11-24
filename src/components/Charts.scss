@@ -26,6 +26,10 @@
 		&--amount {
 			border-radius: 0.25rem;
 			margin-bottom: 2rem;
+
+			.active {
+				background-color: $cyan !important;
+			}
 		}
 	}
 
