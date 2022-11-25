@@ -26,9 +26,9 @@ Users should be able to:
 
 ### Screenshot
 
-I'll be updating this later when I'm done with the project
-
-<!-- ![](./screenshot.jpg) -->
+![Active States](./images/active%20state.png)
+![Mobile](./images/mobile%20preview.png)
+![Desktop](./images/desktop%20preview.png)
 
 ### Links
 

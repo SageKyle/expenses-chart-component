@@ -22,14 +22,39 @@
 			margin-right: 1rem;
 		}
 
-		// bar chart item
+		// expense amount
 		&--amount {
+			font-size: 1.5rem;
+			font-weight: 400;
+			background-color: $dark-brown;
+			color: $very-pale-orange;
+			padding: 0.5rem;
+			margin-bottom: 2rem;
+			margin-left: -1rem;
+			border-radius: 0.2rem;
+			width: fit-content;
+			visibility: hidden;
+			transition: all 0.2s ease-in-out;
+		}
+
+		// bar chart item
+		&--bar {
+			background-color: $soft-red;
 			border-radius: 0.25rem;
 			margin-bottom: 2rem;
+			cursor: pointer;
 
-			.active {
-				background-color: $cyan !important;
+			&.active {
+				background-color: $cyan;
 			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		// display amount on hover
+		&:hover > &--amount {
+			visibility: visible;
 		}
 	}
 
@@ -71,7 +96,7 @@
 	}
 
 	// media queries
-
+	// > 704px
 	@media screen and (min-width: 44em) {
 		min-width: 45rem;
 		max-width: 45%;

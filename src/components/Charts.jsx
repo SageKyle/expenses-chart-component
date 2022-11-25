@@ -1,12 +1,13 @@
 // styles
 import './Charts.scss';
-
+// components/utils
 import Data from '../db/data.json';
 import { useGetSum } from '../hooks/useGetSum';
 import { SingleChart } from '../utils/SingleChart';
 import { Total } from '../utils/Total';
 
 export const Charts = () => {
+	// get total sum of expenses
 	const total = Data.reduce(useGetSum, 0);
 	const difference = '+2.4';
 
