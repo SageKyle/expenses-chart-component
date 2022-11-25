@@ -32,7 +32,8 @@ Users should be able to:
 
 ### Links
 
-Solution URL (Frontend Mentor): [here]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/responsive-expenses-chart-component-react-and-sass-ofK02p043Q))
+Solution URL (Frontend Mentor): [here](https://www.frontendmentor.io/solutions/responsive-expenses-chart-component-react-and-sass-ofK02p043Q)
+
 Live Site URL: [here](https://charts-component.netlify.app/)
 
 ## My process
